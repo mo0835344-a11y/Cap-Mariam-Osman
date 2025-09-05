@@ -1,103 +1,142 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mariam Osman — Fitness Trainer</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariam Osman | Fitness Trainer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #e38cb7;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+    }
+
+    header h1 {
+      margin: 1rem 0 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #e38cb7;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e38cb7;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .contact {
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        padding: 1.5rem 1rem;
+      }
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+      section {
+        padding: 1.5rem 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="page">
-    <aside class="left">
-      <div class="photo-wrap">
-        <img src="assets/photo.jpg" alt="Mariam Osman">
-      </div>
-      <h1 class="name">Mariam Osman</h1>
-      <h2 class="job">Fitness Trainer</h2>
-      <p class="summary">An enthusiastic and passionate physical education student with hands-on experience as a fitness trainer, eager to join a reputable gym in Banha. Specializing in personalized training programs, nutrition guidance, and injury prevention. Aiming to inspire women and men to achieve their goals and maintain an active lifestyle.</p>
 
-      <div class="section">
-        <h3>Contact</h3>
-        <ul class="contact">
-          <li>📞 01128247271</li>
-          <li>✉️ <a href="mailto:mariamabdallahosman@gmail.com">mariamabdallahosman@gmail.com</a></li>
-          <li>📍 Arb El-Raml, Quesna, Monoufia</li>
-        </ul>
-      </div>
+  <header>
+    <img src="profile.jpg" alt="Mariam Osman">
+    <h1>Mariam Osman</h1>
+    <p>Fitness Trainer | Program Design | Nutrition</p>
+  </header>
 
-      <div class="section">
-        <h3>Skills</h3>
-        <ul class="skills">
-          <li>Personal Training</li>
-          <li>Nutrition Guidance</li>
-          <li>Program Design</li>
-          <li>Motivation & Empowerment</li>
-          <li>Injury Prevention</li>
-          <li>Group Fitness Coaching</li>
-          <li>Team Work</li>
-          <li>Communication</li>
-          <li>Leading</li>
-          <li>Time Management</li>
-        </ul>
-      </div>
-    </aside>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      An enthusiastic and passionate physical education student with hands-on experience as a fitness trainer. 
+      Specializing in personalized training programs, nutrition guidance, and injury prevention. 
+      Aiming to inspire women and men to achieve their goals and maintain an active lifestyle.
+    </p>
+  </section>
 
-    <main class="right">
-      <section class="edu">
-        <h2>EDUCATION</h2>
-        <ul class="edu-list">
-          <li><strong>Bachelor's Degree in Physical Education</strong> (In Progress) — Faculty of Physical Education, Banha University<br><em>Expected Graduation: 2026</em></li>
-          <li><strong>Course:</strong> Program Design &amp; Nutrition</li>
-        </ul>
-      </section>
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Bachelor's Degree in Physical Education</strong> (In Progress) — Banha University</li>
+      <li><em>Expected Graduation:</em> 2026</li>
+      <li><strong>Course:</strong> Program Design & Nutrition</li>
+    </ul>
+  </section>
 
-      <section class="exp">
-        <h2>EXPERIENCE</h2>
-        <div class="exp-item">
-          <h3>Gymnastics Coach</h3>
-          <div class="date">December 2022 – September 2024</div>
-        </div>
+  <section>
+    <h2>Experience</h2>
+    <ul>
+      <li>Gymnastics Coach (Dec 2022 – Sept 2024)</li>
+      <li>Football Player (2017 – 2023)</li>
+      <li>Fitness Trainer — Alpha Gym, Banha (Mar 2024 – Present)</li>
+      <li>Football Coach</li>
+    </ul>
+  </section>
 
-        <div class="exp-item">
-          <h3>Football Player</h3>
-          <div class="date">(2017 – 2023)</div>
-        </div>
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Personal Training</li>
+      <li>Nutrition Guidance</li>
+      <li>Program Design</li>
+      <li>Motivation & Empowerment</li>
+      <li>Injury Prevention</li>
+      <li>Group Fitness Coaching</li>
+    </ul>
+  </section>
 
-        <div class="exp-item">
-          <h3>Fitness Trainer — Alpha Gym, Banha</h3>
-          <div class="date">March 2024 – Present</div>
-        </div>
+  <section class="contact">
+    <h2>Contact</h2>
+    <ul>
+      <li>📞 01128247271</li>
+      <li>📧 mariamabdallahosman@gmail.com</li>
+      <li>📍 Arb El-Raml, Quesna, Monoufia</li>
+    </ul>
+  </section>
 
-        <div class="exp-item">
-          <h3>Football Coach</h3>
-          <div class="date">(Added)</div>
-        </div>
-      </section>
-
-      <section class="projects">
-        <h2>PROJECTS</h2>
-        <div class="proj-grid">
-          <article class="proj">
-            <h4>Personal Training Programs</h4>
-            <p>Design and deliver personalized training plans for clients, focusing on strength, conditioning, and injury prevention.</p>
-          </article>
-          <article class="proj">
-            <h4>Group Fitness Sessions</h4>
-            <p>Lead group workouts and cardio classes designed for different fitness levels.</p>
-          </article>
-          <article class="proj">
-            <h4>Football Coaching Sessions</h4>
-            <p>Youth football coaching focusing on fundamentals, teamwork, and tactical awareness.</p>
-          </article>
-        </div>
-      </section>
-
-      <footer class="foot">
-        <p>© 2025 Mariam Osman — Built with ❤️</p>
-      </footer>
-    </main>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
