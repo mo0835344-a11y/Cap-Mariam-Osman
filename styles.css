@@ -1,0 +1,43 @@
+/* Feminine themed two-column resume */
+:root{
+  --bg:#fff;
+  --text:#333;
+  --muted:#777;
+  --accent:#d291bc; /* pinkish */
+  --accent2:#f7c6d9; /* light pink */
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Segoe UI',Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+.page{display:flex;min-height:100vh}
+.left{width:34%;background:var(--accent);color:#fff;padding:40px 28px;display:flex;flex-direction:column;align-items:flex-start;gap:18px}
+.photo-wrap{width:160px;height:160px;border-radius:50%;overflow:hidden;border:6px solid #fff;margin-bottom:8px}
+.photo-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.name{color:#fff;margin:0;font-size:1.4rem;font-weight:700}
+.job{margin:0;font-size:1.1rem;color:var(--accent2);font-weight:800}
+.summary{font-size:0.95rem;color:#fefefe;margin-top:12px}
+.section{width:100%;margin-top:10px;border-top:1px solid rgba(255,255,255,0.3);padding-top:14px}
+.section h3{color:#fff;margin:0 0 8px;font-size:1rem;letter-spacing:0.5px}
+.contact li,.skills li{margin:6px 0;list-style:none;color:#fff}
+.contact a{color:#fff;text-decoration:underline}
+.skills{padding:0;margin:0}
+.skills li{background:rgba(255,255,255,0.15);padding:6px 10px;border-radius:6px;margin-bottom:6px;display:inline-block}
+
+/* Right column */
+.right{flex:1;padding:48px 56px;background:#fff}
+.edu h2,.exp h2,.projects h2{margin:0 0 12px;font-size:1.3rem;color:var(--accent)}
+.edu-list{margin:10px 0;padding:0 0 0 18px;color:var(--muted)}
+.exp-item{margin-bottom:18px}
+.exp-item h3{margin:0;font-size:1.05rem;color:var(--text)}
+.date{color:var(--muted);font-size:0.9rem;margin-top:4px}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:8px}
+.proj{padding:14px;border:1px solid var(--accent2);border-radius:10px;background:#fffafc}
+.proj h4{margin:0 0 6px;color:var(--accent)}
+.foot{margin-top:28px;color:var(--muted);font-size:0.9rem;text-align:center}
+
+/* Responsive */
+@media (max-width:900px){
+  .page{flex-direction:column}
+  .left{width:100%;flex-direction:row;align-items:center;padding:20px;gap:12px}
+  .photo-wrap{width:100px;height:100px}
+  .right{padding:20px}
+}
